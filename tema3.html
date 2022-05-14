@@ -1,0 +1,42 @@
+---
+layout: page
+title: Tema 3
+description: La Segona República (1931-1936).
+background: '/img/bg-default.jpg'
+---
+
+<div class="list-group">
+    <a href="" style="text-decoration:none; color: green;"  class="list-group-item list-group-item-success">
+      Preguntes Tema 3 La Segona República.
+    </a>
+{% for post in site.categories.Tema1 %}
+
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+   
+  
+{% endfor %}
+
+    </div>
+
+    <div style="margin-top:40px;"class="list-group">   
+        <a href="" style="text-decoration:none; color: black;"  class="list-group-item list-group-item-primary">
+        Fonts Tema 3 La Segona República. 
+        </a>
+    </div>
+   
+        {% for post in site.categories.Tema1 %}
+        <div class="card mb-3">
+            <img class="card-img-top" src="{{ post.background }}"  >
+            <div class="card-body">
+              <p class="card-text">{{ post.title }}</p>
+              <a href="{{ post.url }}" style="text-align:center;" class="list-group-item list-group-item-action">Veure</a>
+              
+            </div>
+          </div>
+          {% endfor %}
+
+
+
+
+
+          <p style="font-style:italic; font-size:12px;">Image in head by natasha t on Unsplash</p>

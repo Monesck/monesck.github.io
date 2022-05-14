@@ -1,0 +1,54 @@
+---
+layout: page
+title: Buscar
+description: Busca termes, preguntes d'història resoltes i més de la Selectivitat. Recomanem que trobeu vosaltres mateixos el material des de l'apartat Temari.
+background: '/img/bg-buscar.jpg'
+---
+
+<style>
+.active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan input.form-control[type=text] {
+  border-bottom: 1px solid #4dd0e1;
+  box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan .fa, .active-cyan-2 .fa {
+  color: #4dd0e1;
+}
+
+</style>
+
+<div class="container">
+   
+  <h5 style="margin-bottom:15px; text-align:center; color:goldenrod;">Cercador.</h5>
+
+  <!-- Search form -->
+<div class="md-form mt-0">
+  <input id="search-input" class="form-control" type="text" placeholder="Cercar..." aria-label="Search">
+  <ul id="results-container"></ul>
+</div> 
+  
+  <!-- Script pointing to search-script.js -->
+  <script src="/js/search-script.js" type="text/javascript"></script>
+  
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    searchResultTemplate: '<div class="col-12"><div style="border-width: 8px;" class="card border-light text-left p-1 p-md-4 mb-4"><div class="card-body"><div class="d-flex px-1 px-md-3"><div><div class="icon icon-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16"><path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/></svg></div></div><div class="pl-2 pl-md-3"><a href="{url}"><h5>{title}</h5></a><small>{dev}</small></div></div></div></div></div>',
+    json: '/search.json'
+  })
+  </script>
+
+
+<p>Troba mots, preguntes o definicions del temari de la Selectivitat.</p>
+
+<p>Per cercar el temari relacionat amb història no utilitzis el any ni sèrie de la pregunta o font, busca directament la pregunta en el cas de les preguntes o el títol de la font en el cas que ulguis buscar una font.</p>
+
+
+
+</div>
+<p style="font-style:italic; font-size:12px;">Image in head by Sixteen Miles Out on Unsplash</p>
