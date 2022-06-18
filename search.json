@@ -16,4 +16,63 @@
       "image"    : "time-machine.png",
       "dev"      : "pages-themes"
     }
+    ,
+
+    {
+      "title"    : "Referents",
+      "url"      : "/cat/referents/",
+      "category" : "onepage",
+      "image"    : "time-machine.png",
+      "dev"      : "Exercicis resolts"
+    }
+    ,
+
+    {
+      "title"    : "Referents 2",
+      "url"      : "/cat/referents2/",
+      "category" : "onepage",
+      "image"    : "time-machine.png",
+      "dev"      : "Exercicis resolts"
+    }
+    ,
+    {
+      "title"    : "Referents 3",
+      "url"      : "/cat/referents3/",
+      "category" : "onepage",
+      "image"    : "time-machine.png",
+      "dev"      : "Exercicis resolts"
+    }
+    ,
+    {
+      "title"    : "Subordinades Teoria",
+      "url"      : "/cat/subordinacio/",
+      "category" : "onepage",
+      "image"    : "time-machine.png",
+      "dev"      : "Teoria i Subordinades"
+    }
+    ,
+    {
+      "title"    : "Subordinades 2 Exercicis",
+      "url"      : "/cat/subordinacio2/",
+      "category" : "onepage",
+      "image"    : "time-machine.png",
+      "dev"      : "Exercicis subordinades resolts"
+    }
+    ,
+
+    {
+      "title"    : "Subordinades 3 Exercicis",
+      "url"      : "/cat/subordinacio3/",
+      "category" : "onepage",
+      "image"    : "time-machine.png",
+      "dev"      : "Exercicis subordinades resolts"
+    }
+    ,
+    {
+      "title"    : "Subordinades Substantives, Adjectives i Adverbials",
+      "url"      : "/cat/subordinacio/",
+      "category" : "onepage",
+      "image"    : "time-machine.png",
+      "dev"      : "Tota la teoria de la subordinació de la llengua catalana"
+    }
 ]

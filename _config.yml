@@ -1,7 +1,7 @@
 title:              Selepedia
 email:              monesck@gmail.com
-description:        Preguntes i Fonts resoltes
-author:             Monesck
+description:        Exercicis resolts més teoria per la Selectivitat (PAU) de Castellà, Català, Història i Anglès 
+author:             Selepedia United Authors
 baseurl:            ""
 url:                "https://monesck.github.io"
 
@@ -24,3 +24,4 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-seo-tag
