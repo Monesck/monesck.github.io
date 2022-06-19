@@ -1,2 +1,7 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+
+body {
+    font-size: 17px !important;
+    color: $gray-900;
+}
