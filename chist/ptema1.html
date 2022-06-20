@@ -1,0 +1,22 @@
+---
+layout: page
+title: Preguntes Tema 1 Història Selectivitat
+description: La Restauració. Evolució política, social, econòmica i demogràfica (1875-1931)
+
+background: '/img/lowpoly7.jpg'
+---
+
+
+<div class="list-group">
+    <a href="" style="text-decoration:none; color: green;"  class="list-group-item list-group-item-success">
+      Preguntes Tema 1 La Restauració.
+    </a>
+{% for post in site.categories.Tema1 %}
+
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+   
+  
+{% endfor %}
+
+    </div>
+
