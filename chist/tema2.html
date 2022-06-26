@@ -1,42 +1,47 @@
 ---
-layout: page
-title: Tema 2
-description: El catalanisme polític. precedents, aparició i evolució (1833-1931).
-background: '/img/bg-default.jpg'
+layout: page 
+title: Tema 1 Història Selectivitat
+description: El catalanisme polític. precedents, aparició i evolució (1833-1931)
+
+background: '/img/lowpoly7.jpg'
 ---
 
-<div class="list-group">
-    <a href="" style="text-decoration:none; color: green;"  class="list-group-item list-group-item-success">
-      Preguntes Tema 2 El catalanisme polític.
-    </a>
-{% for post in site.categories.Tema2 %}
-
-    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
-   
-  
-{% endfor %}
-
-    </div>
-
+<h3 style="color:#00BFFF; font-size:16px;" class="text-center">Preguntes Resoltes Tema 2 Història</h3>
+<br>
+<a type="button" class="btn btn-outline-primary btn-lg btn-block" href="{{"/chist/ptema2" | relative_url }}">Preguntes Tema 2 Història</a>
+<br>
+<hr> 
+<br>
+<h3 style="color:#00BFFF;" class="text-center">Fonts Resoltes Tema 2 Història</h3>
     <div style="margin-top:40px;"class="list-group">   
         <a href="" style="text-decoration:none; color: black;"  class="list-group-item list-group-item-primary">
         Fonts Tema 2 El catalanisme polític. 
         </a>
     </div>
    
-        {% for post in site.categories.Tema2 %}
+        {% for post in site.categories.Tema2s %}
         <div class="card mb-3">
-            <img class="card-img-top" src="{{ post.background }}"  >
+            <img class="card-img-top" src="{{ post.bckground }}"  >
             <div class="card-body">
               <p class="card-text">{{ post.title }}</p>
               <a href="{{ post.url }}" style="text-align:center;" class="list-group-item list-group-item-action">Veure</a>
               
             </div>
           </div>
+          <hr>
+          <hr>
           {% endfor %}
 
 
 
 
 
-          <p style="font-style:italic; font-size:12px;">Image in head by natasha t on Unsplash</p>
+
+
+
+
+
+
+
+
+
