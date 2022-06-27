@@ -12,19 +12,20 @@ layout: default
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="post-heading">
-            <h2 class="text-center">{{ page.title }}</h2>
-            {% if page.subtitle %}
-            <h2 class="subheading">{{ page.subtitle }}</h2>
+          <div class="page-heading">
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}
+            <span class="subheading">{{ page.description }}</span> 
             {% endif %}
             <br>
             <div class="text-center">
-            <a onclick="copyToClipboard()"><span class="glyphicon glyphicon-check fa-3x"> <i class="fas fa-share-alt text-muted p-md-1 my-1 me-2 icon-4x"  data-mdb-placement="top" title="Share"></i></span></a>
+            <a type="button" class="btn btn-success btn-lg" href="{{"/temari" | relative_url }}">Temari</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+   
   </header>
 
   <div class="container">
@@ -32,10 +33,6 @@ layout: default
       <div class="col-lg-8 col-md-10 mx-auto">
 
         {{ content }}
-
-        <hr>
-
-        
 
       </div>
     </div>
