@@ -1,0 +1,41 @@
+---
+layout: page
+title: Preguntes Tema 4 Història Selectivitat
+description: La Guerra Civil (1936-1939).
+background: '/img/lowpoly7.jpg'
+---
+
+
+<div class="list-group">
+    <a href="" style="text-decoration:none; color: green;"  class="list-group-item list-group-item-success">
+      Preguntes Tema 3 La Segona República (1931-1936).</a>
+    <br>
+
+<h3 style="color:#00BFFF; font-size:16px;" class="text-center">General</h3><div class="list-group">
+{% for post in site.categories.Tema4a %}
+        
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+            
+{% endfor %}
+</div><br>
+    <h3 style="color:#00BFFF; font-size:16px;" class="text-center">Bàndol Republicà</h3><div class="list-group">
+{% for post in site.categories.Tema4b %}
+
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+    
+{% endfor %}
+</div><br>
+<h3 style="color:#00BFFF; font-size:16px;" class="text-center">Bàndol Nacional</h3><div class="list-group">
+{% for post in site.categories.Tema4c %}
+
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+    
+{% endfor %}
+</div><br>
+<h3 style="color:#00BFFF; font-size:16px;" class="text-center">Guerra Civil a Catalunya</h3><div class="list-group">
+{% for post in site.categories.Tema4e %}
+
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+    
+{% endfor %}
+</div><br>

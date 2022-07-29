@@ -5,38 +5,53 @@ description: La transició i la democràcia (1975-1986).
 background: '/img/bg-default.jpg'
 ---
 
-<div class="list-group">
-    <a href="" style="text-decoration:none; color: green;"  class="list-group-item list-group-item-success">
-      Preguntes Tema 6 La transició i la democràcia (1975-1986).
-    </a>
-{% for post in site.categories.Tema1 %}
-
-    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
-   
-  
-{% endfor %}
-
-    </div>
-
+<h3 style="color:#00BFFF; font-size:16px;" class="text-center">Preguntes Resoltes Tema 3 Història</h3>
+<br>
+<a type="button" class="btn btn-outline-primary btn-lg btn-block" href="{{"/chist/ptema3" | relative_url }}">Preguntes Tema 3 Història</a>
+<br>
+<hr> 
+<br>
+<h3 style="color:#00BFFF;" class="text-center">Fonts Resoltes Tema 3 Història</h3>
     <div style="margin-top:40px;"class="list-group">   
         <a href="" style="text-decoration:none; color: black;"  class="list-group-item list-group-item-primary">
-        Fonts Tema 6 La transició i la democràcia (1975-1986).
+        Fonts Tema 3 La Segona República (1931-1936).
         </a>
     </div>
    
-        {% for post in site.categories.Tema1 %}
-        <div class="card mb-3">
-            <img class="card-img-top" src="{{ post.background }}"  >
-            <div class="card-body">
-              <p class="card-text">{{ post.title }}</p>
-              <a href="{{ post.url }}" style="text-align:center;" class="list-group-item list-group-item-action">Veure</a>
-              
-            </div>
-          </div>
+        {% for post in site.categories.Tema3s %}
+        <div class="container">
+          <section class="mx-auto my-5"> 
+            <div  class="card mb-3">
+              <div class="text-center">
+                <p class="card-title font-weight-bold mb-2">{{ post.title }}</p>
+              </div>
+                <hr>  
+               <div style="padding: 0px !important;" class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+                <div style="margin-bottom: 1px !important;" class="shadow-sm p-3 mb-5 bg-white rounded"><img class="card-img-top" src="{{ post.bckground }}"
+                   alt="Card image cap" /> </div>
+                 <a href="#!">
+                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                 </a>
+               </div>
+               <div style="background-color:#FCFBFC !important;" class="card-body">
+                 
+                 <div class="d-flex justify-content-between">
+                   <a style="color:#e7ad99 !important; border-color:#d8b4a0 !important;" class="btn btn-outline-secondary" role="button" href="{{ post.url }}">Veure</a>
+                   <div>
+                    <a onclick="copyToClipboard()"><span class="glyphicon glyphicon-check fa-2x"> <i style="color: grey !important; " class="fas fa-share-alt text-muted p-md-1 my-1 me-2 icon-4x"  data-mdb-placement="top" title="Share this post"></i></span></a>
+                   </div>
+                 </div>
+               </div>
+             </div> 
+           </section> 
+         </div>
+          <hr>
+          <hr>
           {% endfor %}
 
 
 
 
 
-          <p style="font-style:italic; font-size:12px;">Image in head by natasha t on Unsplash</p>
+
+

@@ -1,0 +1,42 @@
+---
+layout: page
+title: Preguntes Tema 5 Història Selectivitat
+description: El Franquisme (1939-1975).
+
+background: '/img/lowpoly7.jpg'  
+---
+
+
+<div class="list-group">
+    <a href="" style="text-decoration:none; color: green;"  class="list-group-item list-group-item-success">
+      Preguntes Tema 5 El Franquisme (1939-1975).</a>
+    <br>
+
+<h3 style="color:#00BFFF; font-size:16px;" class="text-center">La Política del Franquisme</h3><div class="list-group">
+{% for post in site.categories.Tema5d %}
+        
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+            
+{% endfor %}
+</div><br>
+    <h3 style="color:#00BFFF; font-size:16px;" class="text-center">L'oposició</h3><div class="list-group">
+{% for post in site.categories.Tema5c %}
+
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+    
+{% endfor %}
+</div><br>
+<h3 style="color:#00BFFF; font-size:16px;" class="text-center">La repressió sobre els vençuts</h3><div class="list-group">
+{% for post in site.categories.Tema5e %}
+
+    <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+    
+{% endfor %}
+</div><br>
+<h3 style="color:#00BFFF; font-size:16px;" class="text-center">El Franquisme a Catalunya</h3><div class="list-group">
+    {% for post in site.categories.Tema5b %}
+    
+        <a href="{{ post.url }}" class="list-group-item list-group-item-action">{{ post.title }}</a>
+        
+    {% endfor %}
+    </div><br>
