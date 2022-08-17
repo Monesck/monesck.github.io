@@ -3,23 +3,52 @@ layout: default
 ---
 
 <!-- Page Header -->
+<style>
+.simplee {
+                font-size: 20px;
+                font-weight: 200;
+                letter-spacing: 1px;
+                padding: 13px 50px 13px;
+                outline: 0;
+                border: 1px solid black;
+                cursor: pointer;
+                position: relative;
+                background-color: rgba(0, 0, 0, 0);
+              }
+              
+                simplee::after {
+                content: "";
+                background-color: #dcbaff;
+                width: 100%;
+                z-index: -1;
+                position: absolute;
+                height: 100%;
+                top: 7px;
+                left: 7px;
+              }
+</style>
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
   <header class="masthead">
     {% endif %}
-    <div class="overlay"></div>
+    
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="page-heading">
-            <h1>{{ page.title }}</h1>
+            <div class="bodyyt"> 
+              <span class="word-container" data-word="SELEPEDIA" data-word-repeat="4"
+              data-text-colors="#FCA400,#0046DB,#FD0000,#FEFCFE"></span>
+            </div>
+           
             {% if page.description %}
-            <span class="subheading">{{ page.description }}</span> 
+            <span style="color:black;  font-weight: 900; font-size:25px;" class="subheading">{{ page.description }}</span> 
             {% endif %}
             <br>
             <div class="text-center">
-            <a type="button" class="btn btn-success btn-lg" href="{{"/temari" | relative_url }}">Temari</a>
+              <a type="button" class="simplee" href="{{"/temari" | relative_url }}">Temari</a>
+            
             </div>
           </div>
         </div>

@@ -1,0 +1,92 @@
+---
+layout: page
+title: Tema 5
+description: El Franquisme (1959-1975).
+background: '/img/lowpoly7.jpg'  
+---
+
+
+
+<div class="panel panel-default" id="current-pane"> 
+  <table class="table table-hover">
+      <thead>
+         
+              
+              <a href="#current-pane" class="close" data-dismiss="alert" aria-label="close" id="hide">&times;</a>
+          
+      </thead>
+      
+      <tbody>
+        <div class="text-center">  
+          <p style="font-size:14px;">El Tema del Franquisme és molt gran, per no sobrecarregar aquesta secció hem dividit el tema del Franquisme en dues parts. La Repressió Franquista 1939-1959 i El Desarrollismo 1959-1975</p>
+          <a type="button" class="btn btn-primary btn-sm" href="{{"/chist/tema5" | relative_url }}">(1939-1959)</a>
+          <button type="button" class="btn btn-secondary btn-sm" disabled>(1959-1975)</button>
+          <p style="font-size:13px;">Utilitza els botons per navegar per les diferents seccions</p>
+          </div>
+          
+      </tbody>
+    
+  </table>
+  </div>
+  <br>
+  <br>
+<h3 style="color:#00BFFF;" class="text-center">Preguntes Resoltes Tema 5 Història</h3>
+<h3 style="color:#00BFFF; font-size:14px; font-style:italic;" class="text-center">El Desarrollismo (1959-1975)</h3>
+<br>
+<a type="button" class="btn btn-outline-primary btn-lg btn-block" href="{{"/chist/ptema5z" | relative_url }}">Preguntes Tema 5 Història</a>
+<br>
+<hr> 
+<br>
+<h3 style="color:#00BFFF;" class="text-center">Fonts Resoltes Tema 5 Història</h3>
+<h3 style="color:#00BFFF; font-size:14px; font-style:italic;" class="text-center">El Desarrollismo (1959-1975)</h3>
+
+   
+        {% for post in site.categories.Tema5sz %}
+        <div class="container">
+          <section class="mx-auto my-5"> 
+            <div  class="card mb-3">
+              <div class="text-center">
+                <p class="card-title font-weight-bold mb-2">{{ post.title }}</p>
+              </div>
+                <hr>  
+               <div style="padding: 0px !important;" class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+                <div style="margin-bottom: 1px !important;" class="shadow-sm p-3 mb-5 bg-white rounded"><img class="card-img-top" src="{{ post.bckground }}"
+                   alt="Card image cap" /> </div>
+                 <a href="#!">
+                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                 </a>
+               </div>
+               <div style="background-color:#FCFBFC !important;" class="card-body">
+                 
+                 <div class="d-flex justify-content-between">
+                   <a style="color:#e7ad99 !important; border-color:#d8b4a0 !important;" class="btn btn-outline-secondary" role="button" href="{{ post.url }}">Veure</a>
+                   <div>
+                    <a onclick="copyToClipboard()"><span class="glyphicon glyphicon-check fa-2x"> <i style="color: grey !important; " class="fas fa-share-alt text-muted p-md-1 my-1 me-2 icon-4x"  data-mdb-placement="top" title="Share this post"></i></span></a>
+                   </div>
+                 </div>
+               </div>
+             </div> 
+           </section> 
+         </div>
+          <hr>
+          <hr>
+          {% endfor %}
+
+
+
+
+
+
+          <div class="cookie-disclaimer">
+          <div class="cookie-close accept-cookie"><i class="fa fa-times"></i></div>
+  <div class="container">
+    
+    <p>Audiatur bokhandel bruker informasjonskapsler ("cookies") for å øke kvaliteteten på nettstedet. <a href="#">Les mer om hvilke kapsler vi bruker</a>. 
+      <br>Ved å fortsette å bruke nettstedet, aksepterer du vår bruk av informasjonskaplser</p>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <a type="button" class="btn btn-secondary">Accept</a>
+        <a type="button" class="btn btn-secondary">Deny</a>
+      </div>
+      
+  </div>
+</div>

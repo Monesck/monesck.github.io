@@ -4,7 +4,30 @@
 
 <script src="{{"/assets/scripts.js" | relative_url }}"></script>
 
+<script>
+  console.clear();
 
+const wordContainerEl = document.querySelector("[data-word]");
+const word = wordContainerEl.getAttribute("data-word");
+const wordRepeatTimes = wordContainerEl.getAttribute("data-word-repeat");
+const textColorsArray = wordContainerEl.getAttribute("data-text-colors").split(",");
+
+for (let i = 0; i < wordRepeatTimes; i++) {
+const wordEl = document.createElement("span");
+wordEl.className = "word";
+wordEl.style.setProperty("--word-index", i);
+wordEl.style.setProperty("--color", textColorsArray[i]);
+for (let j = 0; j < word.length; j++) {
+  const charEl = document.createElement("span");
+  charEl.className = "char";
+  charEl.style.setProperty("--char-index", j);
+  charEl.innerHTML = word[j];
+  wordEl.appendChild(charEl);
+}
+wordContainerEl.appendChild(wordEl);
+}
+
+</script>
 <script>
   function copyToClipboard(text) {
   var inputc = document.body.appendChild(document.createElement("input"));
@@ -16,6 +39,53 @@
   alert("URL Copied.");
   }
   </script>
+
+
+<script>
+  $(document).ready(function() { 
+    var cookie = false;
+    var cookieContent = $('.cookie-disclaimer');
+
+    checkCookie();
+
+    if (cookie === true) {
+      cookieContent.hide();
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + d.toGMTString() + "; path=/";
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+
+      
+    }
+
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name) === 0) return c.substring(name.length, c.length);
+      }
+      return "";
+    }
+
+    function checkCookie() {
+      var check = getCookie("acookie");
+      if (check !== "") {
+        return cookie = true;
+      } else {
+          return cookie = false; //setCookie("acookie", "accepted", 365);
+      }
+      
+    }
+    $('.accept-cookie').click(function () {
+      setCookie("acookie", "accepted", 365);
+      cookieContent.hide(500);
+    });
+});
+</script>
 
 {% if page.url contains 'contact' %}
   <!-- Form Validation -->
