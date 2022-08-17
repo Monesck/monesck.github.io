@@ -68,6 +68,7 @@ hr.style2 {
 	outline: 1px solid red;
 }
 
+
 :root {
 	--angle: 4deg;
 }
@@ -109,6 +110,25 @@ hr.style2 {
 		z-index: calc(-1 * var(--char-index));
 		margin-left: -1.6rem;
 	}
+}
+
+@media (max-width:500px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    .word {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Montserrat"; 
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: 1rem;
+        color: var(--color, #fff);
+        display: flex;
+        pointer-events: none;
+        user-select: none;
+        line-height: 1.5rem; 
+}
+
 }
 
 
