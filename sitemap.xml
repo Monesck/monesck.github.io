@@ -13,12 +13,32 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://selepedia.com/search/</loc>
+  <loc>https://selepedia.com/temari/</loc>
   <lastmod>2022-08-29T20:00:58+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://selepedia.com/temari/</loc>
+  <loc>https://selepedia.com/historia/</loc>
+  <lastmod>2022-08-29T20:00:58+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://selepedia.com/castellano/</loc>
+  <lastmod>2022-08-29T20:00:58+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://selepedia.com/catala/</loc>
+  <lastmod>2022-08-29T20:00:58+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://selepedia.com/angles/</loc>
+  <lastmod>2022-08-29T20:00:58+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://selepedia.com/search/</loc>
   <lastmod>2022-08-29T20:00:58+00:00</lastmod>
   <priority>0.80</priority>
 </url>
