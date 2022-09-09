@@ -67,6 +67,10 @@ hr.style2 {
 	min-height: 100%;
 	outline: 1px solid red;
 }
+.word-small-container{
+    display:none; 
+}
+
 
 :root {
 	--angle: 4deg;
@@ -111,6 +115,92 @@ hr.style2 {
 	}
 }
 
+@media (max-width:500px)  { /* smartphones, iPhone, portrait 480x320 phones */
+    .word {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Montserrat"; 
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: 1rem;
+        color: var(--color, #fff);
+        display: flex;
+        pointer-events: none;
+        user-select: none;
+        line-height: 1.5rem; 
+        display: none !important;
+    }
+    .bodyyt{
+        display: none !important;
+    }
+    .word-container {
+        display: none !important;
+        }
+        .word-small-container{
+            display: grid;
+            place-items: center;  
+            text-align: center;
+            height: 300px;
+        }
+        .title-small-text{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-size: 200px;
+            text-transform: uppercase;
+            color:black; 
+        }
+        .title-word-small {
+            animation: color-animation 4s linear infinite;
+          }
+          
+          .title-word-1 {
+            --color-1: #DF8453;
+            --color-2: #3D8DAE;
+            --color-3: #E4A9A8;
+          }
+          @keyframes color-animation {
+            0%    {color: var(--color-1)}
+            32%   {color: var(--color-1)}
+            33%   {color: var(--color-2)}
+            65%   {color: var(--color-2)}
+            66%   {color: var(--color-3)}
+            99%   {color: var(--color-3)}
+            100%  {color: var(--color-1)}
+          }
+          .float-area{
+            height:300px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .floating-img{
+            transform: translateY(-10%);
+            animation: floater 1.5s infinite;
+            transition: ease 0.5s;
+            
+            height:200px;
+          }
+          
+          
+          
+          @keyframes floater {
+            0%{transform: translateY(-10%);transition: ease 0.5s;}
+            50%{transform: translateY(10%);transition: ease 0.5s;}
+          }
+
+
+
+
+
+
+
+        }
+
+       
 
 @keyframes up-and-down {
 	0%,
@@ -932,5 +1022,3 @@ hr.style2 {
 
 #client-testimonial-carousel {min-height: 200px;}
 
-
- 
