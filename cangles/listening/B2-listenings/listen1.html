@@ -1,0 +1,247 @@
+---
+layout: page
+title: Practica Listenings EVAU/PAU  
+description: Conjunto de Listenings con solución para practicar para la Selectividad.  
+background: '/img/background-english.jpg'
+---
+
+<style>
+    label.radio {
+  cursor: pointer;
+}
+
+label.radio input {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  padding: 4px 0px;
+  border: 1px solid red;
+  display: inline-block;
+ 
+  width: 100px;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
+.ans {
+  margin-left: 36px !important;
+}
+
+.btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.btn:active {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.center-button-results {
+  width: 100%; 
+  text-align:right; 
+}
+</style>
+
+
+<!-- 
+<div class="container mt-5">
+    <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+            <div class="border">
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                        <h4></h4><span>following country</span>
+                    </div>
+                </div>
+
+                  <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">X.</h3>
+                        <h5 class="mt-1 ml-2">Which of the following country has largest population?</h5>
+                    </div>
+
+                    <div class="ans ml-2">
+                    <input type="radio" name="brazil" value="brazil"> <span>Brazil</span>
+                    </div>
+
+                    <div class="ans ml-2">
+                    <input type="radio" name="Germany" value="Germany"> <span>Germany</span>
+                    </div>
+
+                   <div class="ans ml-2">
+                   <input type="radio" name="Indonesia" value="Indonesia"> <span>Indonesia</span>  
+                   </div>
+
+                  <div class="ans ml-2">
+                  <input type="radio" name="Russia" value="Russia"> <span>Russia</span>
+                  </div>
+
+                  </div>
+                  <p>Powered by ****</p>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<h4>3, 2, 1... SLAM!: POETRY COMES TO THE STAGE</h4>
+  <h5>Choose the best answer according to the recording. Only ONE answer is correct.</h5>
+<div style="text-align:center;"> 
+<audio controls>
+  <source src="path/to/your.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+</div>
+
+<script type="text/javascript" src="/cangles/listening/B2-listenings/must-script.js"></script>
+
+<div class="container mt-5">
+  <div class="d-flex justify-content-center row">
+    <div class="col-md-10 col-lg-10">
+      <div class="border">
+        <div class="question bg-white p-3 border-bottom">
+        <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                    <!--Put manually the Name of your Quiz-->
+                      <span>Title Name</span>
+
+        </div>
+        </div>       
+        <div id="quiz"></div>
+        <div class="center-button-results"> 
+        <button id="submit" class="btn btn-primary pull-right" type="button">Results</button>
+        </div>
+        <div id="results"></div>  
+      </div>
+    </div>
+    <p style="font-size:10px;">Powered by ****</p>
+  </div>
+</div>
+
+
+<button id="toggleButton">Show/Hide Text </button>
+<p id="hiddenText" style="display: none;">This is a hidden text.</p>
+
+
+<script>
+  
+    var myQuestions = [
+  { 
+    question: "How does Anne write her poems?",
+answers: {
+a: "She always uses her laptop because her handwriting is messy.",
+b: "She prefers to write out her poems by hand.",
+c: "She first records them on her phone and then writes them down.",
+d: "She needs to write with dirty hands to find inspiration."
+},
+correctAnswer: "b"
+},
+{
+question: "How did Anne learn about poetry slam?",
+answers: {
+a: "She went to a slam competition with a friend in 2018.",
+b: "She read an ad about a competition.",
+c: "She heard about it in an open mic session.",
+d: "She read an interview with a slammer in a magazine."
+},
+correctAnswer: "a"
+},
+{
+question: "According to Anne, the best thing about slam is",
+answers: {
+a: "that poets know how to make you laugh and cry.",
+b: "the fact that it can be streamed online and played on any device.",
+c: "the strong link between the poet and the live audience.",
+d: "that poems are performed instead of written and read aloud."
+},
+correctAnswer: "c"
+},
+{
+question: "Anne's poems",
+answers: {
+a: "are based on strict mathematical patterns.",
+b: "search phrasing and rhyme by following patterns.",
+c: "usually take about five minutes to recite.",
+d: "intend to be messy and playful, as opposed to mathematical formulae."
+},
+correctAnswer: "d"
+},
+{
+question: "How long does it take Anne to write a poem?",
+answers: {
+a: "A minimum of three months.",
+b: "Usually three minutes.",
+c: "Sometimes just a couple of weeks.",
+d: "Much longer than before."
+},
+correctAnswer: "b"
+},
+{
+question: "How does Anne prepare for a performance?",
+answers: {
+a: "She recites poems aloud to become familiar with their rhythm.",
+b: "She reads the poem lots of times to learn all rhymes.",
+c: "She sings poems out loud in front of the mirror.",
+d: "She studies poems line by line as if they were jokes."
+},
+correctAnswer: "a"
+},
+{
+question: "Why is the audience important in a slam competition?",
+answers: {
+a: "Because they can decide which poems are performed.",
+b: "Because they can help slammers score higher.",
+c: "Because the panel asks for the audience's opinion.",
+d: "Because some members of the audience may be part of the panel."
+},
+correctAnswer: "b"
+},
+{
+question: "Which of the following statements is NOT true about Anne?",
+answers: {
+a: "She started writing when she was younger.",
+b: "She does not like maths anymore.",
+c: "She is good at memorising text.",
+d: "She finds inspiration in other slammers"
+},
+correctAnswer: "a"
+}
+   
+];
+
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+/*
+{
+    question: "put question here",
+    answers: {
+      a: 'put answer number a',
+      b: 'put answer number b',
+      c: 'put answer number c'
+    },
+    correctAnswer: 'put correct answer letter'
+  },
+*/
+</script>
+<script>
+  var toggleButton = document.getElementById("toggleButton");
+var hiddenText = document.getElementById("hiddenText");
+
+toggleButton.addEventListener("click", function() {
+  if (hiddenText.style.display === "none") {
+    hiddenText.style.display = "block";
+  } else {
+    hiddenText.style.display = "none";
+  }
+});
+</script>
