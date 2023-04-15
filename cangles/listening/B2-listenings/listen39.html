@@ -1,0 +1,106 @@
+---
+layout: page
+title: Listen and Improve, Practice Listening Exercises for Better Comprehension 
+description: Practice listening Exercise 39 to enhance your B2 level skills. Improve your listening skills with our interactive practice exercises. Get real-life listening practice and improve your comprehension. 
+background: '/img/background-english.jpg'
+---
+
+<style>
+label.radio {
+  cursor: pointer;
+}
+.center-button-results {
+  width: 100%;  
+  text-align:right; 
+}
+</style>
+
+
+
+
+
+
+ <h4>IS HOLLYWOOD IN CRISIS?</h4>
+  <h5>Choose the best answer according to the recording. Only ONE answer is correct.</h5>
+
+  <div style="text-align:center;"> 
+    <audio controls>
+     <!--<source src="/cangles/listening/B2-listenings/audioB2-listenings/listen1.ogg" type="audio/ogg"> -->
+      <source src="/cangles/listening/B2-listenings/audioB2-listenings/listen39.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+   </audio>
+  <p id="BrowserCompatibility"></p>
+  </div>
+  
+  <script type="text/javascript" src="/cangles/listening/B2-listenings/browser-detect.js"></script>
+
+  <script type="text/javascript" src="/cangles/listening/B2-listenings/must-script.js"></script>
+      <div class="container mt-5">
+       <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+         <div class="border">
+          <div class="question bg-white p-3 border-bottom">
+           <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                    <!--Put manually the Name of your Quiz inside the span tag-->
+                      <span></span>
+           </div>
+          </div>       
+              <div id="quiz"></div>
+               <div class="center-button-results"> 
+                <button id="submit" class="btn btn-primary pull-right" type="button">Check</button>
+               </div>
+                <div id="results"></div>  
+              </div>
+         </div>
+         <p></p>
+       </div>
+      </div>
+
+
+      <button class="btn btn-success" id="toggleButton-Qt">See Transcripts</button>
+      <div style="width:100%;"> 
+        <div style="margin: 10%; text-align:center;">  
+          <div id="hiddenText-Qt" style="display: none;">
+          
+
+         
+          
+          </div>
+        </div>
+      </div>
+      
+
+<script>
+//Quest
+
+
+var Quest = [18237,12382,19281,1421,2312,827]; 
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton, Quest);
+
+
+</script>
+<script>
+ 
+  var NotifyCompatibility = document.getElementById('BrowserCompatibility');
+   if(whichBrowser() === "Google Chrome") {
+
+    NotifyCompatibility.innerHTML = '<div class="card" style="width: 100%;"><div class="card-body"><h6 class="card-subtitle mb-2 text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-exclamation-diamond" viewBox="0 0 16 16"><path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/><path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/></svg> Browser not compatible with audio files</h6><p style="font-size:13px;" class="card-text">Solution 1: Chrome can not play audio files, please open the page with Firefox, Internet Explorer or alternatives browsers.</p><p style="font-size:13px;" class="card-text">Solution 2: You can download the audio file and played in your device while responding the Quiz.</p><a style="text-decoration:none; font-size:12px;" href="/cangles/listening/B2-listenings/audioB2-listenings/listen39.mp3" download="listening" type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/></svg> Download</a></div></div>';
+   }
+</script>
+<script>
+  var toggleButton = document.getElementById("toggleButton-Qt");
+  var hiddenText = document.getElementById("hiddenText-Qt");
+  toggleButton.addEventListener("click", function() {
+  if (hiddenText.style.display === "none") {
+    hiddenText.style.display = "block";
+  } else {
+    hiddenText.style.display = "none";
+  }
+});
+</script>
+
+

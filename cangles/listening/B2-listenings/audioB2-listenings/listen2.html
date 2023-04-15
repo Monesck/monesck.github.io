@@ -1,0 +1,113 @@
+---
+layout: page
+title: Listen and Improve, Practice Listening Exercises for Better Comprehension 
+description: Practice listening exercise #1 to enhance your B2 level skills. Improve your listening skills with our interactive practice exercises. Get real-life listening practice and improve your comprehension. 
+background: '/img/background-english.jpg'
+---
+
+<style>
+label.radio {
+  cursor: pointer;
+}
+.center-button-results {
+  width: 100%;  
+  text-align:right; 
+}
+</style>
+
+
+
+
+
+
+ <h4>TAGE</h4>
+  <h5>Choose the best answer according to the recording. Only ONE answer is correct.</h5>
+
+  <div style="text-align:center;"> 
+      <audio controls>
+      <source src="path/to/your.mp3" type="audio/mpeg">
+       Your browser does not support the audio element.
+      </audio>
+  </div>
+
+  <script type="text/javascript" src="/cangles/listening/B2-listenings/must-script.js"></script>
+      <div class="container mt-5">
+       <div class="d-flex justify-content-center row">
+        <div class="col-md-10 col-lg-10">
+         <div class="border">
+          <div class="question bg-white p-3 border-bottom">
+           <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                    <!--Put manually the Name of your Quiz inside the span tag-->
+                      <span></span>
+           </div>
+          </div>       
+              <div id="quiz"></div>
+               <div class="center-button-results"> 
+                <button id="submit" class="btn btn-primary pull-right" type="button">Check</button>
+               </div>
+                <div id="results"></div>  
+              </div>
+         </div>
+         <p>Powered by Quiz&Tools.com</p>
+       </div>
+      </div>
+
+
+      <button class="btn btn-success" id="toggleButton-Qt">See Transcripts</button>
+      <div style="width:100%;"> 
+        <div style="margin: 10%; text-align:center;">  
+          <div id="hiddenText-Qt" style="display: none;">
+          <p>
+            
+          </p>
+
+          <p>
+            
+          </p>
+
+          <p>
+            
+          </p>
+
+          <p>
+            
+          </p>
+
+          <p>
+            
+          </p>
+
+         
+          
+          </div>
+        </div>
+      </div>
+      
+
+<script>
+//Quest
+
+
+var Quest = [18237,12382,19281,1421,2312,827]; 
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton, Quest);
+
+
+</script>
+
+<script>
+  var toggleButton = document.getElementById("toggleButton-Qt");
+  var hiddenText = document.getElementById("hiddenText-Qt");
+  toggleButton.addEventListener("click", function() {
+  if (hiddenText.style.display === "none") {
+    hiddenText.style.display = "block";
+  } else {
+    hiddenText.style.display = "none";
+  }
+});
+</script>
+
+

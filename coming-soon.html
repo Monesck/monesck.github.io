@@ -1,0 +1,167 @@
+<html> 
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+
+      
+        <title>
+          Coming Soon Page
+        </title>
+      
+        <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+      
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
+        <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-8DHTMZ2LEF"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-8DHTMZ2LEF');
+      </script>
+      </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+    .fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+.fill::after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+/* Slide button styling */
+.slide {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 30px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.slide i {
+  opacity: 0;
+  font-size: 13px;
+  transition: 0.2s;
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  transition: transform 1;
+}
+
+.slide div {
+  transition: transform 0.8s;
+}
+
+.slide:hover div {
+  transform: translateX(-6px);
+}
+
+.slide::after {
+  content: "";
+  background-color: #66f2d5;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+}
+
+.slide:hover i {
+  opacity: 1;
+  transform: translateX(-6px);
+}
+/* End of Slide Button  */
+
+h1{
+    font-size: 5.5rem !important;
+     
+}
+
+</style>
+
+<body>  
+<br><br>
+<!-- Heading Section -->
+<div class="heading-sec text-center">
+    <div class="col-lg-8 col-md-12 mx-auto">
+        <h1 class="text-uppercase">Coming Soon</h1>
+        <p>Our website is under construction. We're excited to announce that something new is on its way! Our team is working diligently behind the scenes to bring you an exciting project that we can't wait to share with you. </p>
+    </div>
+</div>
+
+<!-- Countdown Timer -->
+<div class="countdown-sec mb-4">
+    <div id="timer"></div>
+</div>
+
+<!-- Notification Section -->
+<div class="contact-sec mb-5">
+    <div class="col-md-7 mx-auto subscribe-box my-2 text-center">
+        <a href="/index.html" style="color:green; margin-left:10px;" type="button" class="slide">
+            <div>HOME</div>
+            <i class="icon-arrow-right"></i>
+          
+          </a>
+    </div>
+
+    
+        <div class="card card-body border-0">
+            <div class="text-center"> 
+            <video style="max-width:500px;" class="img-fluid" poster="" autoplay loop muted="" controls>
+                <source src="\img\devs.mp4">
+                <source src="\img\devs.mp4">
+                <p class="warning">Your browser does not support HTML5 video.</p>
+            </video>
+            <p style="margin-top:10px; font-family: 'Space Mono', monospace;">Bueno coming soon... </p>
+        </div>
+        </div>
+    
+    
+    
+</div>
+
+</div>
+</div>
+</section>
+
+</body>

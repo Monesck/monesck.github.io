@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Anglès 2023 Selectivitat Temari
-description: Temari de Anglès 2023 de la Selectivitat resolt.  
+title: Inglés 2023 Selectividad Temario
+description: Temario de Inglés 2023 de la Selectividad resuelto.  
 background: '/img/bg-temari.jpg'
 ---
 
@@ -16,46 +16,47 @@ background: '/img/bg-temari.jpg'
       <br>
       <a class="list-group-item list-group-item-action" href="{{"/cangles/partsangles" | relative_url }}">Estructura Examen</a> 
       <br>
-      <h5>Practice Listening and Reading</h5> 
+      <h5>Practice Listening</h5> 
+      <h7>+30 Listenings para practicar la Selectividad. Todos son Listenings de años anteriores. Cada uno viene con su Quiz autocorregible y Transcript, todo en la misma página.</h7>
       <br>
-      <a  class="list-group-item list-group-item-action" href="{{"" | relative_url }}">Sele Listenings</a>
-      <a  class="list-group-item list-group-item-action" href="{{"" | relative_url }}">Sele Readings</a>
+      <a  class="list-group-item list-group-item-action" href="{{"/cangles/listening/EBAU-listenings" | relative_url }}">Sele Listenings</a>
+      <!--<a  class="list-group-item list-group-item-action" href="{{"" | relative_url }}">Sele Readings</a>-->
      
       
        
 
       <br>
-      <h5>Estructures Writings</h5>
+      <h5>Estructura Writings</h5>
+      <h7>Conjunto de estructuras de Writing que pueden caer en la Selectividad, se explica el proceso de escritura de todas las estructuras, las partes que tu Writing debe tener y ejemplos para complementar la explicación. </h7>
       <br>
+     
+          <div class="row">
+  
+            {% for post in site.categories.WritingStructures %}
+            <div class="col-md-4">
+              <div style="background-color:rgba(255, 255, 255, 0.2) !important;" class="card mb-4 box-shadow">
+                <h5 style="margin-left: 20px !important; margin-top: 20px; padding:5px;">{{ post.tag }}</h5>
+                <div style="margin-top: 0px !important;" class="card-body">
+                  <p style="font-size:15px;" class="card-text">{{ post.title }}</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a style="font-size:12px;" href="{{ post.url }}" class="list-group-item list-group-item-action">Ver</a>
+                    </div>
+                    <small class="text-muted">10 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+  
+       
+          </div>
       
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/essay" | relative_url }}">Essay Writing</a>
-      
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/article-writing" | relative_url }}">Article Writing</a>
-              
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/narrative-writing" | relative_url }}">Narrative Writing</a>
-              
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/opinion-essay" | relative_url }}">Opinion essay Writing</a>
-              
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/for-against-essay" | relative_url }}">For and against essay Writing</a>
-              
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/blog-entry" | relative_url }}">Blog entry Writing</a>
-              
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/argumentative-essay" | relative_url }}">Argumentative essay Writing</a>
-
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/email" | relative_url }}">Email Writing</a>
-
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/informal-letter" | relative_url }}">Informal letter Writing</a>
-
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/formal-essay" | relative_url }}">Formal essay Writing</a>
-
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/dialogue" | relative_url }}">Dialogue Writing</a>
-
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/diary" | relative_url }}">Diary Writing</a>
-
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/interview" | relative_url }}">Interview Writing</a>
-
-      <a  class="list-group-item list-group-item-action" href="{{"/cangles/structures/letter-to-the-editor" | relative_url }}">Letter to the editor Writing</a>
-
+  
+   
+  
+  
+  
     </div>
   </div>
   
