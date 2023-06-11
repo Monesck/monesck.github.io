@@ -1,0 +1,629 @@
+---
+layout: ly-mainbase
+title: Calculadora de Nota en Selectividad
+description: Calculadora de Notas Selectividad. Estima tu puntuación final en los exámenes de Selectividad de manera precisa. Ingresa tus notas de la fase general y específica, así como la nota de Bachillerato o CFGS, y obtén al instante tu resultado. Herramienta confiable y práctica para tomar decisiones informadas sobre tu ingreso a la universidad. Calcula tus notas de Selectividad de forma rápida y sencilla con nuestra calculadora online. 
+
+---
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+  <meta charset="UTF-8">
+  <title>Calculadora de Nota en Selectividad</title>
+
+  <style>
+    .nota-final {
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 50px;
+      position: relative;
+    }
+
+   
+
+  </style>
+</head>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form id="" method="post">
+          <div class="form-group">
+            <label for="opcio_batxillerat">Modalidad:</label>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="opcio_batxillerat" name="opcio" type="radio" value="opcio_batxillerat" />
+              <label class="custom-control-label" for="opcio_batxillerat">Bachillerato</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input class="custom-control-input" id="opcio_cfgs" name="opcio" type="radio" value="opcio_cfgs" />
+              <label class="custom-control-label" for="opcio_cfgs">CFGS</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="batxillerat">Nota de Bachillerato/CFGS:</label>
+            <input class="form-control" id="batxillerat" maxlength="6" name="batxillerat" type="text" />
+          </div>
+          <br>
+          <h2>Fase general</h2>
+
+          <table id="generals" class="table">
+            <tbody>
+              <tr>
+                <td><label for="castella">Castellano:</label></td>
+                <td><input class="form-control" id="castella" maxlength="6" name="castella" type="text" /></td>
+              </tr>
+              <tr>
+                <td><label for="angles">Lengua extranjera:</label></td>
+                <td><input class="form-control" id="angles" maxlength="6" name="angles" type="text" /></td>
+              </tr>
+              <tr>
+                <td><label for="historia">Historia de España:</label></td>
+                <td><input class="form-control" id="historia" maxlength="6" name="historia" type="text" /></td>
+              </tr>
+              <tr>
+                <td><label for="optativa">Optativa:</label></td>
+                <td><input class="form-control" id="optativa" maxlength="6" name="optativa" type="text" /></td>
+              </tr>
+            </tbody>
+          </table>
+           <br>
+          <h2>Lengua cooficial</h2>
+          <table id="cooficial" class="table">
+          
+            <tbody>
+              <tr>
+                <td>
+                  <label for="cooficial">Lengua cooficial:</label>
+                </td>
+                <td>
+                  <input class="form-control" id="cooficialInput" maxlength="6" name="cooficial" type="text" disabled />
+                </td>
+                <td>
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" id="activarCooficial" type="checkbox" onchange="toggleCooficialInput()" />
+                    <label class="custom-control-label" for="activarCooficial">Activar</label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <p style="font-size:12px;">Catalán (Cataluña), Vasco (País Vasco) etc. </p>
+          </table>
+          <br>
+          <h2>Fase específica</h2>
+
+          <table id="especifiques" class="table">
+            <tbody>
+              <tr>
+                <td><label for="especifica1">Específica 1:</label></td>
+                <td>
+                  <select class="form-control" id="ponderacio1" name="ponderacio1">
+                    <option value="0.1">0.1</option>
+                    <option value="0.2">0.2</option>
+                  </select>
+                </td>
+                <td><input class="form-control" id="especifica1" maxlength="6" name="especifica1" type="text" /></td>
+              </tr>
+              <tr>
+                <td><label for="especifica2">Específica 2:</label></td>
+                <td>
+                  <select class="form-control" id="ponderacio2" name="ponderacio2">
+                    <option value="0.1">0.1</option>
+                    <option value="0.2">0.2</option>
+                  </select>
+                </td>
+                <td><input class="form-control" id="especifica2" maxlength="6" name="especifica2" type="text" /></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="text-center">
+            <button class="btn btn-primary" id="submit" type="button" onclick="calcula()">Calcular</button>
+          </div>
+          <!--<div class="nota-final" id="nota">&nbsp;</div>-->
+
+          
+<div class="nota-final" id="nota">
+  <!-- Your existing code for the fireworks and note display -->
+  
+</div>
+
+        </form>
+      </div>
+    </div>
+    <p style="font-size:12px;">Los datos proporcionados por el simulador son de naturaleza indicativa.</p>
+  </div>
+          
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<script>
+
+function toggleCooficialInput() {
+      const cooficialInput = document.getElementById("cooficialInput");
+      const activarCooficialCheckbox = document.getElementById("activarCooficial");
+
+      if (activarCooficialCheckbox.checked) {
+        cooficialInput.disabled = false;
+      } else {
+        cooficialInput.disabled = true;
+      }
+    }
+
+    
+ function calcula() {
+  var opcioBatxillerat = document.getElementById("opcio_batxillerat").checked;
+
+  if (opcioBatxillerat) {
+    // Cálculos para Bachillerato
+    var notaBatxillerat = sanitizeInput(document.getElementById("batxillerat").value);
+  
+    var notaCastella = sanitizeInput(document.getElementById("castella").value);
+    var notaAngles = sanitizeInput(document.getElementById("angles").value);
+    var notaHistoria = sanitizeInput(document.getElementById("historia").value);
+    var notaOptativa = sanitizeInput(document.getElementById("optativa").value);
+    var ponderacio1 = parseFloat(document.getElementById("ponderacio1").value);
+    var notaEspecifica1 = sanitizeInput(document.getElementById("especifica1").value);
+    var ponderacio2 = parseFloat(document.getElementById("ponderacio2").value);
+    var notaEspecifica2 = sanitizeInput(document.getElementById("especifica2").value);
+    const activarCooficialCheckbox = document.getElementById("activarCooficial");
+
+      if (activarCooficialCheckbox.checked) {
+        var notacooficialInput = sanitizeInput(document.getElementById("cooficialInput").value);
+        
+        // Validación de las notas ingresadas
+        if (!validateInput(notaBatxillerat) || !validateInput(notacooficialInput) || !validateInput(notaCastella) ||
+        !validateInput(notaAngles) || !validateInput(notaHistoria) || !validateInput(notaOptativa) ||
+        !validateInput(notaEspecifica1) || !validateInput(notaEspecifica2)) {
+          alert("Por favor, ingresa notas válidas.");
+        return;
+        }
+
+    // Cálculos para la nota final
+    var notaFinalParteObligatoria = (parseFloat(notacooficialInput) + parseFloat(notaCastella) + parseFloat(notaAngles) +
+                                    parseFloat(notaHistoria) + parseFloat(notaOptativa)) / 5;
+    var notaFinalParteEspecifica = (parseFloat(notaEspecifica1) * parseFloat(ponderacio1)) +
+                                   (parseFloat(notaEspecifica2) * parseFloat(ponderacio2));
+    var notaFinalSelectividad = (parseFloat(notaBatxillerat) * 0.6) +
+                                (parseFloat(notaFinalParteObligatoria) * 0.4) +
+                                parseFloat(notaFinalParteEspecifica);
+
+    // Muestra la nota final
+    document.getElementById("nota").innerHTML = "Tu nota final en Selectividad es: " + notaFinalSelectividad.toFixed(2);
+   
+   
+
+
+      } else {
+        
+        // Validación de las notas ingresadas
+        if (!validateInput(notaBatxillerat) || !validateInput(notaCastella) ||
+        !validateInput(notaAngles) || !validateInput(notaHistoria) || !validateInput(notaOptativa) ||
+        !validateInput(notaEspecifica1) || !validateInput(notaEspecifica2)) {
+          alert("Por favor, ingresa notas válidas.");
+        return;
+        }
+
+        // Cálculos para la nota final
+        var notaFinalParteObligatoria = (parseFloat(notaCastella) + parseFloat(notaAngles) +
+                                    parseFloat(notaHistoria) + parseFloat(notaOptativa)) / 4;
+        var notaFinalParteEspecifica = (parseFloat(notaEspecifica1) * parseFloat(ponderacio1)) +
+                                   (parseFloat(notaEspecifica2) * parseFloat(ponderacio2));
+        var notaFinalSelectividad = (parseFloat(notaBatxillerat) * 0.6) +
+                                (parseFloat(notaFinalParteObligatoria) * 0.4) +
+                                parseFloat(notaFinalParteEspecifica);
+
+      // Muestra la nota final
+      document.getElementById("nota").innerHTML = "Tu nota final en Selectividad es: " + notaFinalSelectividad.toFixed(2);
+  
+  
+
+      }
+  } else {
+
+
+    // Cálculos solo para CFGS
+    var notaBatxillerat = sanitizeInput(document.getElementById("batxillerat").value);
+    var notaEspecifica1 = sanitizeInput(document.getElementById("especifica1").value);
+    var notaEspecifica2 = sanitizeInput(document.getElementById("especifica2").value);
+
+    // Validación de las notas ingresadas
+    if (!validateInput(notaBatxillerat) || !validateInput(notaEspecifica1) || !validateInput(notaEspecifica2)) {
+      alert("Por favor, ingresa notas válidas para la Fase Específica.");
+      return;
+    }
+
+    // Cálculos para la nota final
+    var ponderacio1 = parseFloat(document.getElementById("ponderacio1").value);
+    var ponderacio2 = parseFloat(document.getElementById("ponderacio2").value);
+    var notaFinalParteEspecifica = (parseFloat(notaEspecifica1) * parseFloat(ponderacio1)) +
+                                   (parseFloat(notaEspecifica2) * parseFloat(ponderacio2));
+    var notaFinalSelectividad = (parseFloat(notaBatxillerat)) + (parseFloat(notaFinalParteEspecifica));
+
+    // Muestra la nota final
+    document.getElementById("nota").innerHTML = "Tu nota final en Selectividad es: " + notaFinalSelectividad.toFixed(2);
+  }
+}
+
+// Función para sanitizar el input y evitar ataques de inyección de código
+function sanitizeInput(inputValue) {
+  return inputValue.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+// Función para validar que el input sea un número válido entre 0 y 10
+function validateInput(inputValue) {
+  var numericValue = parseFloat(inputValue);
+  return !isNaN(numericValue) && numericValue >= 0 && numericValue <= 10;
+}
+
+document.getElementById("submit").addEventListener("click", calcula);
+
+</script>
